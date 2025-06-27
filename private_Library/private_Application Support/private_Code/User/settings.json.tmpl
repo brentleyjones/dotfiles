@@ -63,8 +63,10 @@
     "editor.suggestSelection": "first",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.trimFinalNewlines": true,
+    "makefile.configureOnOpen": false,
     "search.exclude": {
         "**/.classpath": true,
         "**/.factorypath": true,
@@ -72,14 +74,18 @@
         "**/.settings": true,
     },
     "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
     "vim.handleKeys": { "<D-c>": false, "<D-v>": false },
     "vim.mouseSelectionGoesIntoVisualMode": false,
     "vim.useCtrlKeys": false,
     "vim.useSystemClipboard": true,
     "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
     "workbench.startupEditor": "none",
+    "zenMode.hideLineNumbers": false,
 
     /* Git */
+    "git.blame.statusBarItem.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
     "githubIssues.ignoreCompletionTrigger": [
         "bazel",
         "coffeescript",
@@ -136,6 +142,9 @@
     },
     "[shellscript]": {
         "editor.tabSize": 2,
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "bazel.enableCodeLens": false,
     "bazel.lsp.command": "starpls",
@@ -217,7 +226,6 @@
     "remote.SSH.useLocalServer": false,
     "remote.SSH.remotePlatform": {
         "brentley-ubuntu.local": "linux",
-        "home.brentely.dev": "linux",
         "home.brentley.dev": "linux",
     },
 
